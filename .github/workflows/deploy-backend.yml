@@ -43,6 +43,6 @@ jobs:
             docker stop live-feed-server || true
             docker rm live-feed-server || true
             docker run -d --restart unless-stopped --name live-feed-server -p 5000:5000 \
-              -e DATABASE_URL=postgresql://postgres:postgres@35.194.27.38:5432/live_feed \
+              -e DATABASE_URL=${{ secrets.POSTGRES_URI }} \
               gcr.io/your-project-id/live-feed-server:latest
           EOF
