@@ -18,7 +18,7 @@ function OrderList() {
 
   return (
     <div>
-      <h1>LIVE FEED</h1>
+      <h1>LIVE ORDERS FEED</h1>
       <table border="1">
         <thead>
           <tr>
