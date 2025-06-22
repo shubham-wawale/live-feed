@@ -1,0 +1,13 @@
+# .gitignore
+
+# Node modules
+node_modules/
+# Log files
+*.log
+# Environment variables
+.env
+# Build files
+client/build/
+server/dist/
+# Docker artifacts
+*.tar
